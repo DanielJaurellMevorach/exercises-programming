@@ -1,12 +1,23 @@
 class Student:
     def __init__(self, name):
-        pass
+        self.name = name
+        self.__course = {}
 
     def calculate_letter_grade(self, score):
-        pass
+        if score >= 90:
+            return "A"
+        elif score >= 80:
+            return "B"
+        elif score >= 70:
+            return "C"
+        elif score >= 60:
+            return "D"
+        else:
+            return "F"
 
     def add_course(self, course_name, score):
-        pass
+        score = self.calculate_letter_grade(score)
+        self.__course.update({course_name: score})
 
     def get_courses(self):
-        pass
+        return self.__course

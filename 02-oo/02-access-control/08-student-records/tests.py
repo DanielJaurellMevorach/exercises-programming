@@ -3,7 +3,7 @@ from student import Student
 def test_student_initialization():
     student = Student("John")
     assert student.name == "John"
-    assert student._Student__courses == {}  # Verify that the courses attribute is initialized as an empty dictionary
+    assert student._Student__course == {}  # Verify that the courses attribute is initialized as an empty dictionary
 
 def test_student_calculate_letter_grade():
     student = Student("John")
