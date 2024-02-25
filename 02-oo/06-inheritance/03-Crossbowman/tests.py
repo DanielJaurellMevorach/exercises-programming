@@ -39,5 +39,5 @@ def test_crossbowman_triple_shot_insufficient_arrows():
     assert str(exc_info.value) == "Not enough arrows"
 
 # Run the tests
-if __name__ == "__main__":
+if __name__ == "_main_":
     pytest.main()
